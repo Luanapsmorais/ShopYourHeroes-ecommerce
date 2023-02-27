@@ -1,0 +1,20 @@
+:root {
+    --primary: #531D20;
+    --secondary: #792A2E;
+    --light-grey: #F5F5F5;
+    --medium-grey: #828282;
+    --dark-grey: #1A1A1A;
+    --title-1: 1.85rem;
+    --title-2: 1.55rem;
+    --title-3: 1.25rem;
+    --title-4: 1rem;
+    --headline: 1rem;
+    --body-text: 0.875rem;
+    --small-text: 0.625rem;
+  }
+  
+  body, button, input {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: var(--body-text);
+    color: var(--dark-grey);
+  }

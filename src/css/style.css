@@ -1,0 +1,248 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 100vw;
+    height: 100px;
+  
+    position: fixed;
+  
+    background-color: var(--light-grey);
+  
+    box-shadow: 5px 5px 10px var(--dark-grey);
+  
+    padding: 0 2rem;
+  }
+  
+  header > h1 {
+    font-size: var(--title-1);
+  }
+  
+  .filter__container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filter__container > li {
+    width: 120px;
+  }
+  
+  .filter__container > li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary);
+  
+  }
+  
+  main {
+    padding-top: 200px;
+    margin: 0 auto 2rem auto;
+  
+    width: 80%;
+    /* max-width: 1200px; */
+  
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .list__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .list__item {
+    width: 300px;
+    height: 500px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  
+    
+    box-shadow: 3px 2px;
+    border: 2px solid var(--dark-grey);
+    border-radius: 9px;
+  }
+  
+  .list__item > img {
+    height: 250px;
+    width: 100%;
+    
+    background-color: var(--light-grey);
+  }
+  
+  
+  .list__item--category {
+    background-color: var(--primary);
+    color: var(--light-grey);
+    
+    width: 60px;
+    
+    padding: 4px;
+    margin-left: 1rem;
+  
+    font-size: var(--small-text);
+    border-radius: 3px;
+  }
+  
+  .list__item > p, .list__item> h2 {
+    margin: 0 1rem;
+  }
+  
+  .list__item--price {
+    font-weight: bold;
+  
+    margin-left: 1rem;
+  }
+  
+  .list__item--button {
+    align-self: flex-start;
+  
+    border: none;
+    background-color: transparent;
+  
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .list__item--button:hover {
+    cursor: pointer;
+  
+    text-decoration: underline;
+  
+    color: var(--primary);
+  }
+  
+  /* .list__item:hover {
+    border: 3px solid var(--primary);
+  } */
+  
+  .cart__container {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  
+  .search__container {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    margin-bottom: 2rem;
+  
+  }
+  
+  .search__container > input {
+    border: none;
+  
+    background-color: var(--light-grey);
+  
+    padding: 1rem;
+  }
+  
+  .search__button {
+    border: none;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: var(--light-grey);
+  }
+  
+  .cart__container > section > h2 {
+    background-color: var(--secondary);
+    color: var(--light-grey);
+  
+    font-size: 1.5rem;
+    text-align: center;
+  
+    padding: .5rem;
+  
+    width: 100%;
+  }
+  
+  .cart__list {
+    background-color: var(--light-grey);
+  
+   
+    max-height: 600px;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  
+    text-align: center;
+  
+    padding: 2rem 0;
+  
+    overflow-y: scroll;
+  }
+  
+  .cart__item {
+    width: 95%;
+    height: 100px;
+  
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .cart__item > img {
+    width: 100px;
+  
+    background-color: #FFFFFF;
+  }
+  
+  .cart__item--product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .cart__item--product > h2 {
+    font-size: var(--title-4);
+
+    
+  }
+  
+  .cart__item--product > span {
+    font-weight: 700;
+  }
+  
+  .cart__button--remove {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .cart__button--remove:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .cart__footer {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+  
+    width: 100%;
+  
+    padding: 2rem 1rem;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer__quantity--container, .footer__total--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer__quantity--container > p, .footer__total--container > p {
+    font-weight: bold;
+  }
